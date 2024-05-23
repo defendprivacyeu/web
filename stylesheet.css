@@ -97,7 +97,7 @@ h2 {
     }
 
     .navbar-links a {
-        margin: 20px 0;
+        margin: 10px 0;
         font-size: 24px;
     }
 
@@ -118,11 +118,59 @@ h2 {
         flex-direction: column;
         align-items: center;
     }
+
     .content-box {
         flex: 1 1 100%;
         max-width: 100% !important;
     }
 
+    .content-box-bottom {
+        flex: 1 1 100%;
+        max-width: 100% !important;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    #donate {
+        padding: 0px 0px !important;
+    }
+    
+    .outside-footer {
+        border-top: 1px solid #000;
+        margin: 0px 0px !important;
+    }
+
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-box-footer {
+        flex: 1 1 100%;
+        max-width: 100% !important;
+        padding: 0px 0px !important;
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+
+    .content-box-bottom {
+        flex: 1 1 100%;
+        max-width: 100% !important;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
+    .content-box-bottom button {
+        margin: 10px auto;
+    }
+
+    .content-box button {
+        margin: 0px auto;
+    }
 }
 
 .nav-active {
@@ -177,6 +225,22 @@ h2 {
     color: #000;
 }
 
+.CTA a {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 35px;
+    margin-top: 15px;
+    text-decoration: none;
+    border: 1px solid #000;
+}
+
+.CTA a:hover {
+    color: #000;
+    background-color: #fae100;
+    border: 1px solid #000;
+}
+
 /* Content Boxes */
 
 .outside {
@@ -193,6 +257,7 @@ h2 {
     justify-content: center;
     background-color: #fff;
     padding: 75px 0px;
+    width: 100%;
 }
 
 .content-box {
@@ -213,7 +278,7 @@ h2 {
 .content-box .text {
     padding: 20px;
     flex-grow: 1;
-    text-align: left;
+    text-align: center;
 }
 
 .content-box button {
@@ -229,6 +294,84 @@ h2 {
     background-color: #fae100;
     color: #000;
 }
+
+.content-box .hashtag {
+    font-weight: 1000;
+}
+
+.content-box .hashtag a {
+    text-decoration: none;
+    color: #000;
+}
+
+.content-box .hashtag a:hover {
+    color: #fae100;
+}
+
+/* Content box bottom */
+
+.content-box-bottom {
+    background-color: #fff;
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content-box-bottom img {
+    width: 25%;
+    height: auto;
+    margin-top: 25px;
+}
+
+.content-box-bottom img.testimony {
+    width: 33%;
+    height: auto;
+    margin-top: 25px;
+}
+
+.content-box-bottom .text {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.content-box-bottom button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.content-box-bottom button:hover {
+    background-color: #fae100;
+    color: #000;
+}
+
+.content-box-bottom .hashtag {
+    font-weight: 1000;
+}
+
+.content-box .hashtag a {
+    text-decoration: none;
+    color: #000;
+}
+
+.content-box .hashtag a:hover {
+    color: #fae100;
+}
+
+.divider {
+    width: 1px;
+    height: auto;
+    background-color: #ababab;
+    margin: 0px 50px;
+}
+
 
 /* FAQ */
 
@@ -282,8 +425,169 @@ h2 {
     color: #000;
   }
 
+  /* Donate Section */
 
+  #donate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 75px 0px;
+}
 
+.donate-content {
+    max-width: 900px; 
+    background-color: #fae100;
+    padding: 75px 0px;
+
+}
+
+.donate-content h1 {
+    font-size: 6.5rem;
+    line-height: 6rem;
+}
+
+.donate-content p {
+    padding-top: 15px;
+    max-width: 600px;
+    display: inline-block;
+}
+
+.donate-content .hashtag {
+    font-weight: 1000;
+}
+
+.donate-content .hashtag a {
+    text-decoration: none;
+    color: #000;
+} 
+
+/* Footer */
+
+.outside-footer {
+    background-color: #fae100;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    margin: 0px 50px;
+}
+
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #fae100;
+    padding: 75px 0px;
+    width: 100%;
+}
+
+.content-box-footer {
+    background-color: #fae100;
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0px 50px;
+}
+
+.content-box-footer img {
+    max-width: 25px;
+    height: auto;
+}
+
+.content-box-footer .text {
+    padding: 20px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.content-box-footer button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.content-box-footer button:hover {
+    background-color: #fae100;
+    color: #000;
+}
+
+.content-box-footer .hashtag {
+    font-weight: 1000;
+    margin-top: 5px;
+}
+
+.content-box-footer .hashtag a {
+    text-decoration: none;
+    color: #000;
+}
+
+.content-box-footer .hashtag a:hover {
+    color: #fae100;
+}
+
+.content-box-footer a {
+    margin-top: 5px;
+}
+
+.content-box-footer-cta {
+    background-color: #000;
+    max-width: 350px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content-box-footer-cta h2 {
+    color: #fff;
+}
+
+.content-box-footer-cta p {
+    color: #fff;
+}
+
+.signup {
+    border: 1px solid #000;
+    padding: 5px;
+    margin-top: 15px;
+    max-width: 200px;
+}
+
+.signup-button {
+    border: 1px solid #000;
+    padding: 5px;
+    margin-top: 5px;
+    max-width: 100px;
+    background-color: #000;
+    text-align: center;
+}
+
+.signup-button a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.content-box-footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+h2.yellowdivider {
+    color: #fae100;
+}
 
 
 
