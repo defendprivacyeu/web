@@ -175,6 +175,10 @@ h2 {
     .content-box button {
         margin: 0px auto;
     }
+    
+     html, css {
+	overflow-x: hidden;
+     }
 }
 
 .nav-active {
