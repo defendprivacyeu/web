@@ -106,7 +106,7 @@ h2 {
     }
 
     .hero {
-	background-size: 180% !important;
+        background-size: 180% !important;
     }
 
     .hero-content {
@@ -175,10 +175,10 @@ h2 {
     .content-box button {
         margin: 0px auto;
     }
-    
-     html, css {
-	overflow-x: hidden;
-     }
+
+    html, body {
+        overflow-x: hidden;
+    }
 }
 
 .nav-active {
@@ -597,5 +597,113 @@ h2.yellowdivider {
     color: #fae100;
 }
 
+/* SUBPAGES */
+/* Support */
+
+.hero-sub {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-sub-content {
+    max-width: 600px; 
+}
+
+.hero-sub-content h1 {
+    font-size: 6.5rem;
+    line-height: 6rem;
+}
+
+.hero-sub-content p {
+    padding-top: 15px;
+}
+
+.hero-sub-content .hashtag {
+    font-weight: 1000;
+}
+
+.hero-sub-content .hashtag a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* grid */
+
+.support {
+    width: 100%;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 50px 0px;
+}
+
+.support-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.support-grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.support-grid-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.support-grid-item img .you {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.support-grid-item h3 {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.support-grid-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+.support-grid-item button {
+    background-color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.support-grid-item button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.support-grid-item button a {
+    color: #fff;
+}
 
 
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .support-grid-container {
+        grid-template-columns: 1fr;
+    }
+}
