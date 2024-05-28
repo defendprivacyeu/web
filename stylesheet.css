@@ -328,6 +328,11 @@ h2 {
     text-align: center;
 }
 
+.content-box-bottom a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .content-box-bottom img {
     width: 25%;
     height: auto;
