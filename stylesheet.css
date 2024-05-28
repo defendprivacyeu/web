@@ -105,6 +105,10 @@ h2 {
         display: block;
     }
 
+    .hero {
+	background-size: contain;
+    }
+
     .hero-content {
         padding: 0px 50px;
     }
