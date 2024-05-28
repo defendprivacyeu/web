@@ -106,7 +106,7 @@ h2 {
     }
 
     .hero {
-	background-size: contain;
+	background-size: 180% !important;
     }
 
     .hero-content {
