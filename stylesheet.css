@@ -131,6 +131,7 @@ h2 {
     .content-box-bottom {
         flex: 1 1 100%;
         max-width: 100% !important;
+        margin-top: 25px;
     }
 
     .divider {
@@ -606,15 +607,16 @@ h2.yellowdivider {
 /* Support */
 
 .hero-sub {
-    height: 50vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 }
 
-.hero-sub-content {
-    max-width: 600px; 
+.hero-sub-content img {
+    width: 100%;
 }
 
 .hero-sub-content h1 {
@@ -702,6 +704,12 @@ h2.yellowdivider {
 
 .support-grid-item button a {
     color: #fff;
+}
+
+.socials {
+    max-width: 25px;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 
