@@ -859,12 +859,10 @@ a.intext:after {
     }
 
     .content-box {
-        flex: 1 1 100%;
         max-width: 100% !important;
     }
 
     .content-box-bottom {
-        flex: 1 1 100%;
         max-width: 100% !important;
         margin-top: 25px;
     }
@@ -901,7 +899,6 @@ a.intext:after {
     }
 
     .content-box-bottom {
-        flex: 1 1 100%;
         max-width: 100% !important;
     }
 
