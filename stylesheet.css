@@ -79,114 +79,6 @@ h2 {
     transition: all 0.3s ease;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    .navbar-links {
-        position: absolute;
-        right: 0;
-        height: 100vh;
-        top: 0;
-        background-color: #fae100;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-    }
-
-    .navbar-links a {
-        margin: 2px 0;
-        font-size: 24px;
-    }
-
-    .burger {
-        display: block;
-    }
-
-    .hero {
-        background-size: 180% !important;
-    }
-
-    .hero-content {
-        padding: 0px 50px;
-    }
-
-    h1 {
-        font-size: 4.5rem !important;
-        line-height: 4.5rem !important;
-    }
-
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .content-box {
-        flex: 1 1 100%;
-        max-width: 100% !important;
-    }
-
-    .content-box-bottom {
-        flex: 1 1 100%;
-        max-width: 100% !important;
-        margin-top: 25px;
-    }
-
-    .content-box-sub {
-        max-width: 100% !important;
-        margin-top: 25px;
-    }
-
-    .divider {
-        display: none;
-    }
-
-    #donate {
-        padding: 0px 0px !important;
-    }
-    
-    .outside-footer {
-        border-top: 1px solid #000;
-        margin: 0px 0px !important;
-    }
-
-    .container-footer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .content-box-footer {
-        flex: 1 1 100%;
-        max-width: 100% !important;
-        padding: 0px 0px !important;
-        margin-top: 15px;
-        margin-left: 25px;
-    }
-
-    .content-box-bottom {
-        flex: 1 1 100%;
-        max-width: 100% !important;
-    }
-
-    button {
-        margin-bottom: 10px;
-    }
-
-    .content-box-bottom button {
-        margin: 10px auto;
-    }
-
-    .content-box button {
-        margin: 0px auto;
-    }
-
-    html, body {
-        overflow-x: hidden;
-    }
-}
-
 .nav-active {
     transform: translateX(0);
 }
@@ -304,9 +196,18 @@ h2 {
     transition: background-color 0.3s;
 }
 
+.content-box button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.content-box button a:hover {
+    color: #000;
+}
+
 .content-box button:hover {
     background-color: #fae100;
-    color: #000;
+    color: #000 !important;
 }
 
 .content-box .hashtag {
@@ -801,9 +702,222 @@ a.caption {
     margin: 25px 0px;
 }
 
+/* Docs */
+
+.topics {
+    display: flex;
+    gap: 20px;
+}
+
+.topics a {
+    text-decoration: none !important;
+    color: #000;
+    padding: 10px 20px;
+    background-color: #fae100;
+}
+
+.topics a:hover {
+    color: #fff;
+    background-color: #000;
+    transition: transform 0.3s ease-in;
+}
+
+.topics a::after {
+    display: none;
+}
+
+.spacer {
+    padding: 25px;
+    background-color: #fff;
+}
+
+a.intext {
+    font-weight: 1000;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+}
+
+a.intext:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fae100;
+    visibility: visible;
+    transform: scaleX(1);
+    transition: all 0.2s ease-in-out;
+}
+
+.list {
+    display: flex;
+    border-bottom: 1px solid #ababab;
+    padding-bottom: 15px;
+}
+
+.list-box {
+    display: flex;
+    flex: 1;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+.list-box h3 {
+    font-size: 1rem !important;
+}
+
+.list-box a {
+    font-weight: inherit;
+}
+
+.list-box a:after {
+    display: none;
+}
+
+.list-box p {
+    font-size: 0.75rem;
+    line-height: inherit;
+}
+
+/* About */
+
+.organizers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-top: 25px;
+    border-bottom: 1px solid #ababab;
+    padding-bottom: 25px;
+}
+
+.organizers img {
+    width: 33.33%;
+    max-width: 200px;
+    height: auto;
+}
+
+.organizers-text {
+    width: 66.67%;
+    padding: 20px;
+    align-self: flex-start;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .support-grid-container {
         grid-template-columns: 1fr;
+    }
+
+    .navbar-links {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        background-color: #fae100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .navbar-links a {
+        margin: 2px 0;
+        font-size: 24px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .hero {
+        background-size: 180% !important;
+    }
+
+    .hero-content {
+        padding: 0px 50px;
+    }
+
+    h1 {
+        font-size: 4.5rem !important;
+        line-height: 4.5rem !important;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-box {
+        flex: 1 1 100%;
+        max-width: 100% !important;
+    }
+
+    .content-box-bottom {
+        flex: 1 1 100%;
+        max-width: 100% !important;
+        margin-top: 25px;
+    }
+
+    .content-box-sub {
+        max-width: 100% !important;
+        margin-top: 25px;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    #donate {
+        padding: 0px 0px !important;
+    }
+    
+    .outside-footer {
+        border-top: 1px solid #000;
+        margin: 0px 0px !important;
+    }
+
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-box-footer {
+        flex: 1 1 100%;
+        max-width: 100% !important;
+        padding: 0px 0px !important;
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+
+    .content-box-bottom {
+        flex: 1 1 100%;
+        max-width: 100% !important;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
+    .content-box-bottom button {
+        margin: 10px auto;
+    }
+
+    .content-box button {
+        margin: 0px auto;
+    }
+
+    html, body {
+        overflow-x: hidden;
     }
 }
