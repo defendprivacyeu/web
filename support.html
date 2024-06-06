@@ -15,12 +15,11 @@
             <a href="index.html"><img src="logo.png" alt="Logo"></a>
         </div>
         <div class="navbar-links" id="navbarLinks">
-            <a href="#ourprivacy">Why Privacy</a>
             <a href="case.html">Our Case</a>
             <a href="about.html">About Us</a>
             <a href="support.html">Support Us</a>
             <a href="docs.html">Docs</a>
-            <a href="#press">Press</a>
+            <a href="press.html">Press</a>
             <a href="index.html#faq">FAQ</a>
             <a href="#contact">Contact</a>
             <a href="#donate" style="background-color: #000; color: #fae100;">Donate</a>
@@ -33,7 +32,6 @@
             <div class="line5"></div>
             <div class="line6"></div>
             <div class="line7"></div>
-            <div class="line8"></div>
         </div>
     </nav>
 
@@ -143,6 +141,42 @@
 </div>
 </div>
 
+<script>
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navbarLinks');
+
+    burger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+        burger.classList.toggle('toggle');
+    });
+
+    function toggleExpand(clickedItem) {
+  // Find the parent grid container of the clicked item
+  var container = clickedItem.closest('.grid-container');
+  
+  // Find the expanding element within this container
+  var expandingElement = container.querySelector('.expanding-element');
+
+  if (expandingElement.classList.contains('hidden')) {
+    expandingElement.classList.remove('hidden');
+    expandingElement.style.display = 'block';
+  } else {
+    expandingElement.classList.add('hidden');
+    expandingElement.style.display = 'none';
+  }
+}
+
+function toggleMenu() {
+  var menu = document.getElementById('menu');
+  if (menu.style.opacity === "0" || menu.style.opacity === "") {
+    menu.style.opacity = "1";
+    menu.style.pointerEvents = "auto";
+  } else {
+    menu.style.opacity = "0";
+    menu.style.pointerEvents = "none";
+  }
+}
+</script>
 
 </body>
 </html>
