@@ -26,8 +26,10 @@ h2 {
 
 .subhl {
     font-size: 4rem;
+    line-height: 4rem;
     padding: 0px 30px
 }
+
 
 /* Navigation */
 /* Navbar Styles */
@@ -201,6 +203,15 @@ h2 {
     color: #fff;
 }
 
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button a:hover {
+    color: #000;
+}
+
 .content-box button a:hover {
     color: #000;
 }
@@ -297,6 +308,7 @@ h2 {
 
 #list {
     background-color: #fff;
+    padding-top: 50px;
 }
 
 .grid-container {
@@ -330,19 +342,9 @@ h2 {
   }
 
   .expanding-element a {
-    padding: 10px 15px;
-    background-color: #000;
-    color: #fff;
+    color: #000;
     margin-top: 25px;
     display: flex;
-    justify-content: center;
-    max-width: 200px;
-    text-decoration: none;
-  }
-
-  .expanding-element a:hover {
-    background-color: #fae100;
-    color: #000;
   }
 
   /* Donate Section */
@@ -653,10 +655,16 @@ h2.yellowdivider {
     font-size: 2.2rem;
     margin-bottom: 25px;
     margin: 25px 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .article p {
     line-height: 25px;
+    margin-bottom: 15px;
+    text-align: justify;
+    text-align-last: left;
 }
 
 .article img {
@@ -674,6 +682,7 @@ p.caption {
     justify-content: center;
     color: #d3d3d3;
     font-size: 0.75rem;
+    line-height: inherit;
 }
 
 .article button {
@@ -700,6 +709,7 @@ a.caption {
 
 .article h2 {
     margin: 25px 0px;
+    font-family: "Noto Serif JP", serif;
 }
 
 /* Docs */
@@ -796,6 +806,8 @@ a.intext:after {
     padding-top: 25px;
     border-bottom: 1px solid #ababab;
     padding-bottom: 25px;
+    text-align: justify;
+    text-align-last: left;
 }
 
 .organizers img {
@@ -808,6 +820,25 @@ a.intext:after {
     width: 66.67%;
     padding: 20px;
     align-self: flex-start;
+}
+
+/* Placeholder */
+
+.placeholder {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.placeholder-content {
+    max-width: 600px; 
+}
+
+.placeholder-content h1 {
+    font-size: 6.5rem;
+    line-height: 6rem;
 }
 
 /* Responsive styles */
@@ -840,6 +871,10 @@ a.intext:after {
         display: block;
     }
 
+    .navbar-links.nav-active {
+        transform: translateX(0%);
+      }
+
     .hero {
         background-size: 180% !important;
     }
@@ -848,9 +883,19 @@ a.intext:after {
         padding: 0px 50px;
     }
 
+    .hero-sub {
+        display: none;
+    }
+
+    .hero-sub-content {
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
     h1 {
-        font-size: 4.5rem !important;
-        line-height: 4.5rem !important;
+        font-size: 16.5vw !important;
+        line-height: 16vw !important;
     }
 
     .container {
@@ -907,11 +952,35 @@ a.intext:after {
     }
 
     .content-box-bottom button {
-        margin: 10px auto;
+        margin: 20px auto;
     }
 
     .content-box button {
         margin: 0px auto;
+        margin-bottom: 25px;
+    }
+
+    .outside {
+        padding: 0px 50px;
+    }
+
+    .topics {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .organizers {
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .organizers img {
+        width: 100%;
+    }
+
+    .organizers-text {
+        width: 100%;
     }
 
     html, body {
