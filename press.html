@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="stylesheet.css">
+	<title>Defend Privacy EU</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="case.html">Our Case</a>
+            <a href="about.html">About Us</a>
+            <a href="support.html">Support Us</a>
+            <a href="docs.html">Docs</a>
+            <a href="press.html">Press</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+            <a href="#donate" style="background-color: #000; color: #fae100;">Donate</a>
+        </div>
+        <div class="burger" id="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+            <div class="line5"></div>
+            <div class="line6"></div>
+            <div class="line7"></div>
+        </div>
+    </nav>
+    <div class="placeholder">
+        <div class="placeholder-content">
+            <h1>COMING SOON.</h1>   
+        </div> 
+    </div>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const navLinks = document.getElementById('navbarLinks');
+    
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    
+        function toggleExpand(clickedItem) {
+      // Find the parent grid container of the clicked item
+      var container = clickedItem.closest('.grid-container');
+      
+      // Find the expanding element within this container
+      var expandingElement = container.querySelector('.expanding-element');
+    
+      if (expandingElement.classList.contains('hidden')) {
+        expandingElement.classList.remove('hidden');
+        expandingElement.style.display = 'block';
+      } else {
+        expandingElement.classList.add('hidden');
+        expandingElement.style.display = 'none';
+      }
+    }
+    
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      if (menu.style.opacity === "0" || menu.style.opacity === "") {
+        menu.style.opacity = "1";
+        menu.style.pointerEvents = "auto";
+      } else {
+        menu.style.opacity = "0";
+        menu.style.pointerEvents = "none";
+      }
+    }
+    </script>
+    
+    </body>
+    </html>
