@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
@@ -21,8 +21,8 @@
             <a href="case.html">Our Case</a>
             <a href="about.html">About Us</a>
             <a href="support.html">Support Us</a>
-            <a href="docs.html">Docs</a>
-            <a href="press.html">Press</a>
+            <a href="#docs">Docs</a>
+            <a href="#press">Press</a>
             <a href="#faq">FAQ</a>
             <a href="#contact">Contact</a>
             <a href="#donate" style="background-color: #000; color: #fae100;">Donate</a>
@@ -40,78 +40,84 @@
 
     <div class="hero-sub">
         <div class="hero-sub-content">
-            <h1>WHO WE ARE.</h1>
+            <h1>FULL TRANSPARENCY.</h1>
         </div> 
     </div>
 
+    <div class="spacer"></div>
+
     <div class="outside">
-        <div class="container">
-            <div class="content-box-sub">
-                <h2>"The disregard for basic human rights in financial regulation, left unchecked and unopposed, is turning into systemic financial surveillance. Our fundamental rights are not negotiable, for they are the basis for freedom and liberal democracy. If we do not act now, we are giving up on crucial freedoms such as privacy and the presumption of innocence, that can hardly be reclaimed once lost."</h2>
-                <p>Alexandre Stachtchenko, Co-Organizer Defend Privacy EU</p>
+        <div class="container article">
+            <div class="article">
+                <p>Our lawsuit is dedicated to 100% transparency. That is why our campaign is completely open source, meaning that we are sharing all research, evidence, official documents and communication in our docs section. If you want to stay up to date with the latest developments, you can sign up to our <a href="" class="intext">newsletter</a>.</p>
             </div>
+
         </div>
     </div>
 
     <div class="outside">
-        <div class="organizers">
-                <img src="profile01.jpg">
-                <div class="organizers-text">
-                    <h3>Alexandre Stachtchenko</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        <div class="container article">
+            <div class="article">
+                <h2>Browse by Topic:</h2>
+                <div class="topics"><a href="#impacts">Impacts</a><a href="#efficiency">Efficiency</a><a href="#testimonies">Testimonies</a></div>
             </div>
+
         </div>
     </div>
 
-    <div class="outside">
-        <div class="organizers">
-                <img src="profile03.jpg">
-                <div class="organizers-text">
-                    <h3>Alexis Roussel</h3>
-                    <p>Lorem Ipsum dolor sit amet</p>
-            </div>
+    <div id="list">  
+        <h2 id="efficiency" class="subhl">Efficiency Research</h2>
+        <div class="grid-container">
+            <div class="grid-item" onclick="toggleExpand(this)">Anti-money laundering: The world's least effective policy experiment? Together, we can fix it, Ronald F. Pohl, 2020</div>
+            <div class="grid-item" onclick="toggleExpand(this)"><img src="arrow.png"></div>
+            <div class="expanding-element hidden">This paper finds that the anti-money laundering policy intervention has less than 0.1 percent impact on criminal finances, compliance costs exceed recovered criminal funds more than a hundred times over, and banks, taxpayers and ordinary citizens are penalized more than criminal enterprises.<a href="https://www.tandfonline.com/doi/full/10.1080/25741292.2020.1725366" target="_blank">https://www.tandfonline.com/doi/full/10.1080/25741292.2020.1725366</a></div>
+          </div>
+          <div class="grid-container">
+            <div class="grid-item" onclick="toggleExpand(this)">Does Crime Still Pay? Criminal Asset Recovery in the EU, Europol, 2010-2014</div>
+            <div class="grid-item" onclick="toggleExpand(this)"><img src="arrow.png"></div>
+            <div class="expanding-element hidden">According to Europol, in the European Union (EU), almost 99 % of criminal profits escape confiscation, remaining in the hands of offenders.<a href="https://www.europol.europa.eu/cms/sites/default/files/documents/criminal_asset_recovery_in_the_eu_web_version.pdf" target="_blank">https://www.europol.europa.eu</a></div>
+          </div>
+          <div class="grid-container">
+            <div class="grid-item" onclick="toggleExpand(this)">Estimating illicit financial flows resulting from drug trafficking and other transnational organized crimes, United Nations, 2009</div>
+            <div class="grid-item" onclick="toggleExpand(this)"><img src="arrow.png"></div>
+            <div class="expanding-element hidden">Globally, it appears that much less than 1% (probably around 0.2%) of the proceeds of crime laundered via the financial system are seized and frozen.<a href="https://www.unodc.org/documents/data-and-analysis/Studies/Illicit-financial-flows_31Aug11.pdf" target="_blank">https://www.unodc.org/documents/data-and-analysis/Studies/Illicit-financial-flows_31Aug11.pdf</a></div>
+          </div>
+        <div class="grid-container">
+          <div class="grid-item" onclick="toggleExpand(this)">KYC Fraud: A New Means to Conduct Financial Fraud – How to Tackle It?, Mishra et al, 2023</div>
+          <div class="grid-item" onclick="toggleExpand(this)"><img src="arrow.png"></div>
+          <div class="expanding-element hidden">Know your customer (KYC) is a measure adopted by financial institutions like banks to render timely services to their legitimate customers. Cybercriminals are resorting to KYC fraud through Vishing and SMiShing attacks.</br><a href="https://www.igi-global.com/chapter/kyc-fraud/313860" target="_blank">https://www.igi-global.com/chapter/kyc-fraud/313860</a></div>
         </div>
+        <div class="grid-container">
+            <div class="grid-item" onclick="toggleExpand(this)">Bank of America Customer Data Stolen in Data Breach, Security Week, 2024</div>
+            <div class="grid-item" onclick="toggleExpand(this)"><img src="arrow.png"></div>
+            <div class="expanding-element hidden">Bank of America is sending notification letters to 57,000 customers to inform them that their personal information was stolen in a data breach at third-party services provider Infosys McCamish System (IMS).<a href="https://www.securityweek.com/bank-of-america-informing-customers-of-data-breach/" target="_blank">https://www.securityweek.com/bank-of-america-informing-customers-of-data-breach/</a></div>
+          </div>
+
     </div>
 
-    <div class="outside">
-        <div class="organizers">
-                <img src="profile04.jpg">
-                <div class="organizers-text">
-                    <h3>Estelle de Marco</h3>
-                    <p>Lorem Ipsum dolor sit amet</p>
-            </div>
+    <div id="list">  
+        <h2 id="impacts" class="subhl">Impact Research</h2>
+
+        <div class="grid-container">
+          <div class="grid-item" onclick="toggleExpand(this)">The Incompatibility of Global Anti-Money Laundering Regimes with Human and Civil Rights, Michele Sciurba, 2019</div>
+          <div class="grid-item" onclick="toggleExpand(this)"><img src="arrow.png"></div>
+          <div class="expanding-element hidden">AML legislation has resulted in a ‘catch-all’ approach that places citizens under a general blanket of suspicion without initial reasonable grounds.<a href="https://www.amazon.de/Incompatibility-Global-Anti-Money-Laundering-Regimes/dp/3848761890/?_encoding=UTF8&pd_rd_w=1x2Ow&content-id=amzn1.sym.c04b8eba-c028-41f1-93ba-155bc9f5a303&pf_rd_p=c04b8eba-c028-41f1-93ba-155bc9f5a303&pf_rd_r=262-6379276-2095266&pd_rd_wg=kf1dn&pd_rd_r=9a994f99-7535-47e5-b6ad-cb7296c8c5bd&ref_=aufs_ap_sc_dsk" target="_blank">amazon.com</a></div>
         </div>
+        <div class="grid-container">
+            <div class="grid-item" onclick="toggleExpand(this)">Anti-Money Laundering State Mechanisms, Michele Sciurba, 2018</div>
+            <div class="grid-item" onclick="toggleExpand(this)"><img src="arrow.png"></div>
+            <div class="expanding-element hidden">This monograph offers a comprehensive analysis of the implementation of global anti-money laundering and counter-terrorism financing (AML/CTF) regulations in the United States and the European Union.<a href="https://www.amazon.com/Anti-Money-Laundering-State-Mechanisms-International-ebook/dp/B07LH53YMQ/ref=sr_1_1?dib=eyJ2IjoiMSJ9.g1sUW04J_-B5Z4w0UNi_JA.NO2vmBrvoTGJUVnn_oFn7YeJXsfCtyrP1yxJJuIw42Y&dib_tag=se&keywords=9783945400623&linkCode=qs&qid=1717067049&s=books&sr=1-1" target="_blank">amazon.com</a></div>
+          </div>
+          <div class="grid-container">
+            <div class="grid-item" onclick="toggleExpand(this)">The Evolving EU Anti-Money Laundering Regime: Challenges for Fundamental Rights and the Rule of Law, Mitsilegas et al, 2016</div>
+            <div class="grid-item" onclick="toggleExpand(this)"><img src="arrow.png"></div>
+            <div class="expanding-element hidden">The article will cast light on the influence of the FATF in shaping these standards and will highlight the impact of the ever expanding EU anti-money laundering legal framework on fundamental rights and the rule of law.<a href="https://journals.sagepub.com/doi/abs/10.1177/1023263X1602300204" target="_blank">sagepub.com</a></div>
+          </div>
+  
+
     </div>
 
-    <div class="outside">
-        <div class="organizers">
-                <img src="profile05.jpg">
-                <div class="organizers-text">
-                    <h3>Antoine Poinsot</h3>
-                    <p>Lorem Ipsum dolor sit amet</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="outside">
-        <div class="organizers">
-                <img src="profile02.jpg">
-                <div class="organizers-text">
-                    <h3>Simon Lelieveldt</h3>
-                    <p>Lorem Ipsum dolor sit amet</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="outside">
-        <div class="organizers">
-                <img src="profile-default.jpg">
-                <div class="organizers-text">
-                    <h3>L0la L33tz</h3>
-                    <p>Lorem Ipsum dolor sit amet</p>
-            </div>
-        </div>
-    </div>
 
     <div id="support">
         <div class="outside">
@@ -122,7 +128,7 @@
                         <p>Have you been subject to account freezes or closures or had trouble sending payments or opening a bank or exchange account? Send us your testimony.</p>
                         <img src="testimony.png" alt="Image 2" class="testimony">
                     </div>
-                    <button>Get involved</button>
+                    <button><a href="mailto:example@example.com?subject=Testimony&body=Send%20us%20your%20testimony%20of%20how%20EU%20AML%20laws%20have%20affected%20you.%20By%20sending%20in%20your%20submission%20you%20agree%20that%20your%20testimony%20can%20be%20publicized%20and%20used%20for%20marketing%20purposes.">Get involved</a></button>
                 </div>
                 <div class="divider"></div>
                 <div class="content-box-bottom">
@@ -131,7 +137,7 @@
                         <p>Are you concerned about the effects of financial surveillance on your human rights? Show your support publicly by adding your name on our page.</p>
                         <img src="support.png" alt="Image 2">
                     </div>
-                    <button><a href="support.html">Get involved</a></button>
+                    <button><a href="mailto:example@example.com?subject=Support&body=Send%20us%20your%20name%20or%20nym%20and%20optionally%20a%20picture%20and%20social%20handles.%20You%20do%20not%20need%20to%20be%20a%20EU%20resident%20to%20show%20your%20support.%20By%20sending%20in%20your%20submission%20you%20agree%20that%20your%20name,%20nym,%20picture%20and%20social%20handles%20can%20be%20publicized%20and%20used%20for%20marketing%20purposes">Get involved</a></button>
                 </div>
             </div>
         </div>
@@ -197,5 +203,6 @@
               }
             }
             </script>
+
 </body>
 </html>
